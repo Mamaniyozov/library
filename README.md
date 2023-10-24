@@ -1,4 +1,4 @@
-# library
+# Library
 
 
 We have make you a wrapper you can't refuse
@@ -26,7 +26,7 @@ This is al ibrary bthat is open source project. It allows users that are registe
 ## Contribute
 
 If you would like to contribute to this project, please fork the project and submit a pull request to the **dev** branch. We will review your pull request and merge it if it is approved. If you have any questions, please contact us. We will be happy to help you.
-
+1. abdullatifkarimov772@gmail.com    2. mamaniyozovmuhammadyusuf5@gmail.com
 ## Database design
 
 ![Database design](./db-design.jpg)
