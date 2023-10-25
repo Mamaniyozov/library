@@ -20,7 +20,7 @@ class Publisher (models.Model):
     info= models.TextField(null=True , blank=True)
     address= models.TextField(null=True , blank=True)
     phone= models.TextField(null=True , blank=True)
-    phone= models.TextField(null=True , blank=True)
+    
     
     def __str__(self):
         return self.name
@@ -38,6 +38,8 @@ class Autor (models.Model):
     
     def __str__(self):
         return self.first_name + " " + self.last_name
+    
+
 class Book (models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField(null=True , blank=True)
@@ -51,11 +53,13 @@ class Book (models.Model):
     def __str__(self):
         return self.title
 
+
 #Returns an array of all users
 class User(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     def __str__(self):
         return self.user.username
+
 
 class User_id(models.Model):
     user_id = models.IntegerField(null=True , blank=True)
