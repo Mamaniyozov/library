@@ -57,3 +57,8 @@ class User(models.Model):
     def __str__(self):
         return self.user.username
 
+class User_id(models.Model):
+    user_id = models.IntegerField(null=True , blank=True)
+    def __str__(self):
+        return str(self.user_id)
+# Create your models here.

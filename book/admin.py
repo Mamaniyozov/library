@@ -1,7 +1,6 @@
 from django.contrib import admin
 
-from .models import Genre, Publisher, Autor, Book
-from django.contrib.auth.models import User
+from .models import Genre, Publisher, Autor, Book, User
 
 admin.site.register(User)
 
