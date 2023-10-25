@@ -26,7 +26,14 @@ class Publisher (models.Model):
         return self.name
     
 
-class Autor (models.Model):
+class Language(models.Model):
+    name = models.CharField(null=True , blank=True)
+
+    def __str__(self):
+        return self.name
+    
+
+class Author (models.Model):
     first_name = models.CharField(max_length=200)
     last_name = models.CharField(max_length=200)
     birth_data = models.DateField(null=True , blank= True)
@@ -47,7 +54,7 @@ class Book (models.Model):
     image = models.ImageField(upload_to='images/', null=True , blank=True)
     info= models.TextField(null=True , blank=True)
     price= models.IntegerField(null=True , blank=True)
-    autor= models.ForeignKey(Autor, on_delete=models.CASCADE)
+    autor= models.ForeignKey(Author, on_delete=models.CASCADE)
     publisher= models.ForeignKey(Publisher, on_delete=models.CASCADE)
     gener= models.ManyToManyField(Genre)
     def __str__(self):
