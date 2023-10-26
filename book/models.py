@@ -95,3 +95,4 @@ class Reaction(models.Model):
     like = models.BooleanField()
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     book = models.ForeignKey(Book, on_delete=models.CASCADE)
+    
