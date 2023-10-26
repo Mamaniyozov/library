@@ -8,8 +8,8 @@
 | POST | api/login-user | Logs in a user |
 | GET | /api/books | Returns an array of all books |
 | POST | /api/create-book/ | Creates a new book |
-| POST | /api/update_book/:id | Updates a post with the specified id |
-| POST | /api/delete-book/:id | Deletes a post with the specified id |
+| POST | /api/update_book/:id | Updates a book with the specified id |
+| POST | /api/delete-book/:id | Deletes a book with the specified id |
 | GET | /api/books/:id | Returns a post object with the specified id |
 
 ## User Object
