@@ -73,3 +73,9 @@ class User_id(models.Model):
     def __str__(self):
         return str(self.user_id)
 # Create your models here.
+
+# Create your reaction
+class Reaction(models.Model):
+    like = models.BooleanField()
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    book = models.ForeignKey(Book, on_delete=models.CASCADE)
