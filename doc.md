@@ -4,13 +4,13 @@
 | --- | --- | --- |
 | GET | /api/users | Returns an array of all users |
 | GET | /api/users/:id | Returns a user object with the specified id |
-| POST | api/create-user/ | Creates a new user |
+| POST | /api/create-user/ | Creates a new user |
 | POST | api/login-user | Logs in a user |
-| GET | /api/posts | Returns an array of all books |
-| POST | /api/create-post/ | Creates a new book |
-| POST | /api/update/:id | Updates a post with the specified id |
-| POST | /api/delete-post/:id | Deletes a post with the specified id |
-| GET | /api/posts/:id | Returns a post object with the specified id |
+| GET | /api/books | Returns an array of all books |
+| POST | /api/create-book/ | Creates a new book |
+| POST | /api/update_book/:id | Updates a book with the specified id |
+| POST | /api/delete-book/:id | Deletes a book with the specified id |
+| GET | /api/books/:id | Returns a post object with the specified id |
 
 ## User Object
 
@@ -20,7 +20,7 @@
 | username | String | Username of the user |
 | password | String | Password of the user |
 
-## Pook Object
+## Book Object
 
 | Key | Type | Description |
 | --- | --- | --- |
