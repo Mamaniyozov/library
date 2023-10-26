@@ -1,4 +1,4 @@
-from .models import Book,Author,Genre,User,User_id,Publisher,Language
+from .models import Book,Author,Genre,Users,User_id,Publisher,Language, creat_user, login_user, Reaction
 from rest_framework.serializers import ModelSerializer
 
 class AutorSerializers(ModelSerializer):
@@ -33,10 +33,27 @@ class PublisherSerializers(ModelSerializer):
 
 class UserSerializers(ModelSerializer):
     class Meta:
-        model = User
+        model = Users
         fields = "__all__"
 
 
 class User_idSerilizers(ModelSerializer):
     class Meta :
         model = User_id
+
+class ReactionSerializers(ModelSerializer):
+    class Meta:
+        model = Reaction
+        fields = "__all__"
+
+
+class Creat_userSerializers(ModelSerializer):
+    class Meta:
+        model = creat_user
+        fields = "__all__"
+
+class Login_userSerializers(ModelSerializer):
+    class Meta:
+        model = login_user
+        fields = "__all__"
+
