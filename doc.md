@@ -20,7 +20,7 @@
 | username | String | Username of the user |
 | password | String | Password of the user |
 
-## Pook Object
+## Book Object
 
 | Key | Type | Description |
 | --- | --- | --- |
