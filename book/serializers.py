@@ -1,5 +1,11 @@
-from .models import Book,Author,Genre,Users,User_id,Publisher,Language, creat_user, login_user, Reaction
+from .models import Book,Author,Genre,Publisher,Language, creat_user, login_user, Reaction
 from rest_framework.serializers import ModelSerializer
+from django.contrib.auth.models import User
+
+class UserSerializers(ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['id', 'username', 'email', 'password']
 
 class AutorSerializers(ModelSerializer):
     class Meta:
@@ -30,16 +36,6 @@ class PublisherSerializers(ModelSerializer):
         model = Publisher
         fields = "__all__"
 
-
-class UserSerializers(ModelSerializer):
-    class Meta:
-        model = Users
-        fields = "__all__"
-
-
-class User_idSerilizers(ModelSerializer):
-    class Meta :
-        model = User_id
 
 class ReactionSerializers(ModelSerializer):
     class Meta:
